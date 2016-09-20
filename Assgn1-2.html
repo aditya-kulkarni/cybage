@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Aditya Kulkarni's Form Page</title>
+<script>		
+	function validate(){
+		var a = document.getElementById("name").value
+		var regex = /^[A-Za-z]{2,25}$/
+		
+		
+		if(a==null || a==" ")
+		{
+			alert("Name must be filled");
+		}
+		if(regex.(test) || regex = " ")
+		{
+			alert("Enter correct name format");
+		}
+		var b = document.getElementById("age").value
+	}
+	
+  </script>
+</head>
+<body>
+	<form name="myform" onsubmit="return validate()" method="post">
+	<fieldset>
+	<legend><h1>Registeration Page</h1></legend>
+
+		
+	Name    	 	<input type="text" name="name" id="name"><br><br>
+	Age		&nbsp		<input type="text" name="age" id="age"><br><br>
+	Email	     	<input type="text" name="email" id="email"><br><br>
+	Confirm Email	<input type="text" name="cmail" id="cmail"><br><br>
+	Intrests	    <input type="textArea" width="200" height="100" name="intrest"><br><br>
+
+		Country<select>
+				<option value="india">India</option>
+				<option value="usa">USA</option>
+				<option value="russia">Russia</option>
+				<option value="japan">Japan</option>
+			</select><br/><br>
+
+	
+	Male		<input type="radio" name="age">
+	Female		<input type="radio" name="age"><br><br>
+	Branch<br><br>
+	IT				<input type="radio" name="branch">
+	Computer		<input type="radio" name="branch"><br>
+	Electronics		<input type="radio" name="branch">
+	Mechanical		<input type="radio" name="branch"><br><br>
+	
+	Skills<br>
+	Html		<input type="checkbox" name="html">
+	php			<input type="checkbox" name="php">
+	java		<input type="checkbox" name="java"><br>
+	vlsi		<input type="checkbox" name="vlsi">
+	jquery		<input type="checkbox" name="jquery">
+	autocad		<input type="checkbox" name="autocad"><br><br>
+	
+	Enter Image to upload
+<input type="file" name="pic" accept="image/*">
+  <input type="submit"><br><br>
+	
+	
+				<input type="button" onclick="validate()" name="submit" value="SubmitForm">
+				<input type="button" name="reset" value="Reset">
+		</fieldset>			
+		</form>
+  	
+  
+</body>
+</html>
