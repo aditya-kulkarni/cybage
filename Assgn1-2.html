@@ -3,26 +3,45 @@
 <head>
 <title>Aditya Kulkarni's Form Page</title>
 <script>		
-	function validate(){
-		var a = document.getElementById("name").value
-		var regex = /^[A-Za-z]{2,25}$/
-		
-		
-		if(a==null || a==" ")
+function validate(){
+alert("In Javascript");
+
+		var a = document.getElementById("name").value;
+	//	var regex = /^[A-Za-z]{2,25}$/
+		if(a == null || a == "")
 		{
 			alert("Name must be filled");
 		}
-		if(regex.(test) || regex = " ")
+	/*	if(regex.test(name) || regex = " ")
 		{
 			alert("Enter correct name format");
-		}
+		}*/
+		
 		var b = document.getElementById("age").value
+		if(b == null || b == "")
+		{
+			alert("Age must be filled");
+		}
+		/*var c = document.getElementById("age").value
+		if(c == null || c == "")
+		{
+			alert("Age must be filled");
+		}*/
+		
+		
+		var e = document.getElementById("d").value
+		var d = 0;
+		for(var i=0 ; i < e.length ; i++)
+		{
+			if(e[i].checked)
+				e = i;
+			alert("please select radio button");
+		}
 	}
-	
   </script>
 </head>
 <body>
-	<form name="myform" onsubmit="return validate()" method="post">
+	<form name="myform" method="post">
 	<fieldset>
 	<legend><h1>Registeration Page</h1></legend>
 
@@ -65,7 +84,7 @@
 				<input type="button" onclick="validate()" name="submit" value="SubmitForm">
 				<input type="button" name="reset" value="Reset">
 		</fieldset>			
-		</form>
+		<!--</form>-->
   	
   
 </body>
