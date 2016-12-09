@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+    <head>
+    
+        
+    </head>
+
+    
+    <body ng-controller="insertCtrl">
+        <!--<form name="addCountry" action="http://localhost/Practice/addCountry.php" method="POST"> -->
+        <form name="myform" novalidate>
+    Enter name <input type="text" ng-model="myform1.name"  value={{myform1.name}} >
+    Enter Country <input type="text" name="country" ng-model="myform1.country" value={{myform1.country}}>
+        <!--<input type="submit" value="submit" ng-click="insrt(myform)">-->
+            <input type="submit" value="submit" ng-click="submitData(myform1)" >
+        </form>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
+        <script type="text/javascript" src="AddCountryScr.js"></script>
+    </body>
+</html>
